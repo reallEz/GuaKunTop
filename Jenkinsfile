@@ -30,7 +30,7 @@ def normalCIBuild(String version) {
 }
 
 def deployVersion(String version) {
-    sh "cp ./index.html /home/gua/Statics/GuakunTop"
+    sh "cp ./index.html /var/jenkins_home/Statics/GuakunTop"
 }
 
 def setScmPollStrategyAndBuildTypes(List buildTypes) {
